@@ -79,3 +79,5 @@ R&D spending – Small R&D spending as interaction factors. The greater the ROE 
  
 Besides value investment strategy, our model also can fit in growth investing strategy. Growth investing strategy is an investment strategy that looks for companies that are expected to grow faster than market average rate. Growth investors often look at profit margin, earning growth, return on equity and share performance. In our model, we have interaction terms such as Big Cash flow to price – Small Cash flow to price and Big ROE* Big ROA - Small ROE * Small ROE can be used in growth investing strategy. Cash flow to price can be useful for value stock with positive cash flow but not profitable because of non-cash charges. ROE and ROA can reflect a company's financial leverage and efficiency of that company generating profit.
 
+
+Please see the executed code here: Visit executed code
