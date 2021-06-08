@@ -49,7 +49,7 @@ We coerced the boolean values to numeric class for both test and train data.
 
 Our goal was to get every single variable into a numeric format because we wanted to replace the missing “NA” values with something that made more sense mathematically and wouldn’t skew the coefficients for our predictive algorithm. Therefore, for all the variables we finally replaced the every NA value with the mean value of each respective column. Now that the data was clean, we created two new dataframes, titled: ‘train_clean’ and ‘test_clean’
  
-Creating prediction model
+## Creating prediction model
 
 For creating the prediction model we used a modified version of the Random forest method, that filters out new data sets and builds trees based on them. We call it the Filtered Random Forest method. It is explained in the sections below.
 
@@ -57,7 +57,7 @@ For creating the prediction model we used a modified version of the Random fores
 
 We divided the data frames according to the usage of the property as indicated by the char_use variable, it could either be a single family home, or a multifamily home; trivially we also had a third division titled “other_family” usage which is basically the mean of the column char_use to account for the NA values. We made this decision because we think it is only fair that we compare like-sized homes. After this division we continued to create separate prediction models on each of these data sets. For the purpose of simplicity we use the shorthand contraction FUB for the three family-use-based data sets that we just described.
 
- Variable Selection
+ ## Variable Selection
 
 After using trial and error we implemented a brute force variable addition approach and thus narrowed down to a set of 20 variables for single family usage data set, 34 variables for multi family usage data set and we left all 37 predictors for “other family” usage as they were initially NA values (this is explained in the next section).
 
@@ -87,6 +87,30 @@ Finally, after designing the optimized prediction model. The model was executed 
 Using random forest and subsetting into FUB data sets, and then further into the different town code as explained in our methodology we built a random forest model and trained it on the historical data to then predict the value of the houses from the predict data. Below are the summary statistics of the predicted value of our houses:
 
 
+![image](https://user-images.githubusercontent.com/77515069/121123682-7bdee280-c7d8-11eb-920b-629912613f82.png)
+
+
 The file that contains the assessed value has the PID of the property and its assessed predicted value is submitted as assessed_values.csv
 
 In conclusion, we believe that our model will not include as extreme values as $800 and $15 million (figure 3 in the appendix) from the original historical data set, however, it should perform better on average as it hopes to imitate a fair distribution of the sale prices.
+
+
+## Appendix
+
+
+![image](https://user-images.githubusercontent.com/77515069/121123744-987b1a80-c7d8-11eb-9983-8a1cbd5eecdf.png)
+
+Figure 1: Methodology description: training data
+
+
+![image](https://user-images.githubusercontent.com/77515069/121123764-a2048280-c7d8-11eb-93e9-14dac84a7ec1.png)
+
+Figure 2: Methodology description: test data
+
+
+![image](https://user-images.githubusercontent.com/77515069/121123816-b5afe900-c7d8-11eb-8590-81c251ca795e.png)
+
+Figure 3: Historical distribution of sale prices
+
+
+
