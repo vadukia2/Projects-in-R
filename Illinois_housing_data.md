@@ -95,6 +95,12 @@ The file that contains the assessed value has the PID of the property and its as
 In conclusion, we believe that our model will not include as extreme values as $800 and $15 million (figure 3 in the appendix) from the original historical data set, however, it should perform better on average as it hopes to imitate a fair distribution of the sale prices.
 
 
+
+**Please see the executed code here:**
+[Visit executed code](https://github.com/vadukia2/Projects-in-Python/blob/main/Bollinger%20Bands%20Project.ipynb)
+
+
+
 ## Appendix
 
 
