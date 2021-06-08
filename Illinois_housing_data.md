@@ -97,7 +97,7 @@ In conclusion, we believe that our model will not include as extreme values as $
 
 
 **Please see the executed code here:**
-[Visit executed code](https://github.com/vadukia2/Projects-in-Python/blob/main/Bollinger%20Bands%20Project.ipynb)
+[Visit executed code](Illinois housing data.R)
 
 
 
