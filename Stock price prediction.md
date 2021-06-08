@@ -48,6 +48,7 @@ Decision Tree and iii) Random Forest.
 
 The Lasso Model did not eliminate any of the predictor variable we used for prediction. There was a strong prediction indicated for variables like lag_ME,AFbm, FF_Momentum, Tanq, Roa, Glaq, Iaq1, IG2, Gla, Nop, Amq, Bs_am, BS_ROE and BBSS_RoaRoE. Please refer to the picture below:
  
+![image](https://user-images.githubusercontent.com/77515069/121127439-a2a01780-c7de-11eb-9972-cebe608b145b.png)
  
  
 We used 75% of the data to train the model and 25% of the data as test data to calculate the
@@ -59,10 +60,15 @@ In this model too we used the same methodology as LASSO to test the efficiency o
 had better predictive power compared to LASSO. This is also in line with what Prof. Mao taught us in class that tree based models generally have better predictability compared to linear models.
 
 
+
+
 ## Random Forest:
 
 This was the best predictor model among all three models. It had an MSE of 0.0272. We used the same method as for the other two models to check the efficiency of this model. The below pictures show the importance of each variable as per the random forest model. It can be seen that Price, Volume, AFbn, FF_Momentum, R61 were some of the key predictors.
  
+ 
+ ![image](https://user-images.githubusercontent.com/77515069/121127516-bcd9f580-c7de-11eb-8900-d560c2f1bf99.png)
+
  
 
 ## Economic interpretation:
