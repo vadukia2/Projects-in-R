@@ -1,12 +1,12 @@
-#EXECUTIVE SUMMARY
+# EXECUTIVE SUMMARY
 
 
 
-#Case Overview
+# Case Overview
 The Case revolves around determining the fair market value of 10,000 properties in Cook County - which is the second most populous county in the US - and includes Chicago and 130 other municipalities. The initial case data provided us with 50,000 properties to train and validate our algorithm so that we can then go on and use it on the 10,000 properties to predict their value. The analysis of the data has been conducted in R; the script of which is submitted separately.
 
  
-##Methodology
+## Methodology
 
 For the analysis of our project we only used functions from the following libraries in R: Tidyverse, Glmnet, Rpart, Rpart.plot, RandomForest and Gbm. These include all the functions we could possibly need that would help us with data transformation and calculations. An easy to understand, summary and pictorial representation of this entire section can be found at the very beginning of the appendix.
 
